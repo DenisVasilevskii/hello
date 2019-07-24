@@ -1,2 +1,13 @@
 apply plugin: 'java'
+apply plugin: 'application'
+
+task wrapper(type: Wrapper){
+    gradleVersion = '4.4.1'
+}
+
+jar {
+    baseName = 'Hello'
+    version = '1'
+}
+
 gradle HelloWorld
